@@ -1,0 +1,62 @@
+@use "../abstract" as *;
+@use "../base" as *;
+
+.feedback {
+  padding-top: rem(177);
+
+  @include breakpoint(lg) {
+    padding-top: rem(100);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-inline: rem(40);
+    overflow: hidden;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: clamp(rem(30), 1.33rem + 2.73vw, rem(54));
+    line-height: 118%;
+    text-align: center;
+    color: $dark;
+    padding-bottom: rem(49);
+  }
+
+  &__companies {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding-top: rem(100);
+    gap: rem(40) rem(50);
+
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(3, 1fr);
+      padding-top: rem(50);
+    }
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-item {
+      margin: 0 auto;
+
+      &-link {
+        display: flex;
+
+        &-img {
+          max-width: rem(86);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use "../abstract" as *;
+@use "../base" as *;
+
+.bars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background: rgb(245, 243, 244, 0.9);
+
+  &__wrap {
+    width: min(100%, rem(450));
+    margin: 30% 0 rem(15);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(10);
+
+    &-item {
+      padding: rem(10);
+
+      &-link {
+        color: $dark;
+        font-size: clamp(rem(25), 0.909rem + 1.7vw, rem(35));
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: rem(10);
+    right: rem(10);
+    width: rem(70);
+    height: rem(70);
+  }
+}

@@ -1,0 +1,33 @@
+@use "../base" as *;
+@use "../abstract" as *;
+
+.motto {
+  padding-top: rem(176);
+
+  @include breakpoint(lg) {
+    padding-top: rem(100);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: clamp(rem(30), 1.446rem + 2.14vw, rem(54));
+    line-height: 118%;
+    text-align: center;
+    color: $dark;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: clamp(rem(30), 1.446rem + 2.14vw, rem(54));
+    line-height: 118%;
+    text-decoration: line-through;
+    text-align: center;
+    color: $gray;
+  }
+}

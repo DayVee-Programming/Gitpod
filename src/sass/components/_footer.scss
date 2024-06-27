@@ -1,0 +1,88 @@
+@use "../abstract" as *;
+@use "../base" as *;
+
+.footer {
+  background: $light;
+
+  &__wrap {
+    padding-inline: rem(294);
+
+    @include breakpoint(xlg) {
+      padding-inline: rem(150);
+    }
+
+    @include breakpoint(lg) {
+      padding-inline: rem(70);
+    }
+
+    @include breakpoint(md) {
+      padding-inline: rem(15);
+    }
+  }
+
+  &__content {
+    padding: rem(48) 0;
+    border-bottom: rem(1) solid $pink-lighter;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: rem(30) rem(15);
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-points {
+      max-width: rem(100);
+      display: flex;
+      flex-direction: column;
+      gap: rem(8);
+
+      &-item {
+        &-link {
+          font-weight: 400;
+          font-size: rem(13);
+          line-height: 150%;
+          color: $dark-70;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(15);
+    align-items: center;
+    padding: rem(32) 0;
+
+    &-logo {
+      display: flex;
+      gap: rem(9);
+      align-items: center;
+
+      &-img {
+        width: rem(22);
+      }
+    }
+
+    &-span {
+      font-weight: 400;
+      font-size: rem(13);
+      line-height: 150%;
+      color: $dark-70;
+    }
+
+    &-socials {
+      display: flex;
+      gap: rem(16);
+      align-items: center;
+
+      &-item {
+        &-pic {
+          display: flex;
+        }
+      }
+    }
+  }
+}

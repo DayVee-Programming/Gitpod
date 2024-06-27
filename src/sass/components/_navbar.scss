@@ -1,0 +1,105 @@
+@use "../base" as *;
+@use "../abstract" as *;
+
+.navbar {
+  padding: rem(20) 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $bg;
+  z-index: 999;
+
+  @include breakpoint(lg) {
+    padding: rem(10) 0;
+  }
+
+  &__wrap {
+    padding: 0 rem(32);
+    display: flex;
+    gap: rem(15);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    gap: rem(48);
+    align-items: center;
+    position: relative;
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+
+    &-item {
+      &-link {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: 150%;
+        color: $dark-70;
+      }
+    }
+  }
+
+  &__btn {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: 143%;
+    color: $light;
+    padding: rem(6) rem(22);
+    border-radius: rem(12);
+    background: $dark;
+    cursor: pointer;
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+
+  &__bars {
+    width: rem(50);
+    height: rem(30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+
+    @include breakpoint(lg) {
+      display: flex;
+    }
+
+    &-span {
+      width: rem(50);
+      height: rem(3);
+      background: $dark;
+      position: relative;
+      border-radius: rem(10);
+
+      &::before,
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        position: absolute;
+      }
+
+      &::before {
+        top: rem(-9);
+        left: 0;
+      }
+
+      &::after {
+        bottom: rem(-9);
+        left: 0;
+      }
+    }
+  }
+}

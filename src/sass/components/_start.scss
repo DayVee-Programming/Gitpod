@@ -1,0 +1,208 @@
+@use "../abstract" as *;
+@use "../base" as *;
+
+.start {
+  padding: rem(198) 0 rem(160);
+
+  @include breakpoint(lg) {
+    padding: rem(150) 0 rem(100);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: rem(48);
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: clamp(rem(30), 1.33rem + 2.73vw, rem(54));
+    line-height: 133%;
+    text-align: center;
+    color: $dark;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(26);
+
+    @include breakpoint(lg) {
+      grid-template-columns: 1fr;
+    }
+
+    &-connect {
+      display: flex;
+      flex-direction: column;
+      gap: rem(63);
+      align-items: center;
+      padding: rem(56);
+      border-radius: rem(20);
+      background: $white;
+
+      @include breakpoint(sm) {
+        padding: rem(30) rem(15);
+        gap: rem(30);
+      }
+
+      &-desc {
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        &-title {
+          font-weight: 700;
+          font-size: clamp(rem(24), 1.318rem + 0.91vw, rem(32));
+          line-height: 125%;
+          text-align: center;
+          color: $dark;
+        }
+
+        &-text {
+          font-weight: 400;
+          font-size: clamp(rem(20), 1.159rem + 0.45vw, rem(24));
+          line-height: 133%;
+          text-align: center;
+          color: rgba(18, 16, 12, 0.7);
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+
+        &-item {
+          border-radius: rem(12);
+          box-shadow: 0 rem(1) rem(1) 0 rgba(0, 0, 0, 0.1);
+          
+          &-link {
+            display: flex;
+            gap: rem(16);
+            align-items: center;
+            padding: rem(9) rem(33);
+
+            &-img {
+              width: rem(28);
+              height: rem(28);
+            }
+
+            &-span {
+              font-weight: 700;
+              font-size: rem(14);
+              line-height: 114%;
+              text-align: center;
+              color: $white;
+            }
+          }
+
+          &:first-child {
+            background: $red;
+          }
+
+          &:nth-child(2) {
+            background: $black;
+          }
+
+          &:last-child {
+            background: $blue;
+          }
+        }
+      }
+
+      &-url {
+        font-weight: 400;
+        font-size: clamp(rem(20), 1.159rem + 0.45vw, rem(24));
+        line-height: 133%;
+        text-align: center;
+        color: $dark-70;
+
+        &-span {
+          border-radius: rem(12);
+          background: $pink-light;
+          padding-inline: rem(16);
+        }
+      }
+    }
+  }
+
+  &__workspaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(56);
+    border-radius: rem(20);
+    background: $white;
+
+    @include breakpoint(sm) {
+      padding: rem(30) rem(15);
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: clamp(rem(24), 1.318rem + 0.91vw, rem(32));
+      line-height: 125%;
+      text-align: center;
+      color: $dark;
+      padding-bottom: rem(8);
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: clamp(rem(20), 1.159rem + 0.45vw, rem(24));
+      line-height: 139%;
+      text-align: center;
+      color: $dark-70;
+      padding-bottom: rem(32);
+    }
+
+    &-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: rem(12);
+
+      &-item {
+        &-link {
+          display: flex;
+          justify-content: space-between;
+          gap: rem(15);
+          align-items: center;
+          padding: rem(12);
+          border-radius: rem(12);
+          background: $light;
+
+          &-desc {
+            display: flex;
+            gap: rem(16);
+            align-items: center;
+
+            &-img {
+              width: rem(27);
+            }
+
+            &-text {
+              font-weight: 400;
+              font-size: rem(20);
+              line-height: 100%;
+              color: $dark-70;
+            }
+          }
+
+          &-span {
+            font-weight: 400;
+            font-size: rem(14);
+            line-height: 114%;
+            text-align: center;
+            color: $white;
+            padding: rem(8) rem(12);
+            border-radius: rem(12);
+            box-shadow: 0 rem(1) rem(1) 0 rgba(0, 0, 0, 0.1);
+            background: $dark;
+          }
+        }
+      }
+    }
+  }
+}

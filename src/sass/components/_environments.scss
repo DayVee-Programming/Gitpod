@@ -1,0 +1,81 @@
+@use "../abstract" as *;
+@use "../base" as *;
+
+.environments {
+  padding-top: rem(339);
+
+  @include breakpoint(lg) {
+    padding-top: rem(150);
+  }
+
+  &__wrap {
+    display: flex;
+    gap: rem(60) rem(15);
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    width: min(100%, rem(648));
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-weight: 700;
+      font-size: rem(32);
+      line-height: 125%;
+      color: $dark;
+      padding-bottom: rem(8);
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: rem(24);
+      line-height: 133%;
+      color: $dark-70;
+      padding-bottom: rem(155);
+
+      @include breakpoint(lg) {
+        padding-bottom: rem(50);
+      }
+    }
+
+    &-links {
+      display: flex;
+      gap: rem(16);
+      align-items: center;
+
+      &-link {
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: 114%;
+        text-align: center;
+        color: $dark;
+        padding: rem(8) rem(18);
+        box-shadow: 0 rem(1) rem(1) 0 rgba(0, 0, 0, 0.1);
+        border-radius: rem(10);
+
+        &.orange {
+          background: $orange;
+        }
+
+        &.pink {
+          background: $pink;
+        }
+      }
+    }
+  }
+
+  &__pic {
+    display: flex;
+
+    &-img {
+      border-radius: rem(20);
+      box-shadow: 0 rem(2) rem(5) 0 rgba(0, 0, 0, 0.08);
+    }
+  }
+}

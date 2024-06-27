@@ -1,0 +1,19 @@
+@use "../abstract" as *;
+@use "../base" as *;
+
+.videoplayer {
+  padding: rem(10) 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__video {
+    width: min(100%, rem(700));
+    border-radius: rem(20);
+    border: rem(3) solid $white;
+  }
+}
