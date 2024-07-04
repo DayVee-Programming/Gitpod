@@ -1,9 +1,9 @@
-$Roboto: ("Regular", 400), ("Bold", 700);
+// $Roboto: ("Regular", 400), ("Bold", 700);
 
-@each $name, $weight in $Roboto {
-  @font-face {
-    font-family: "Roboto";
-    src: url(../../assets/fonts/Roboto/Roboto-#{$name}.ttf) format("truetype");
-    font-weight: $weight;
-  }
-}
+// @each $name, $weight in $Roboto {
+//   @font-face {
+//     font-family: "Roboto";
+//     src: url(../../assets/fonts/Roboto/Roboto-#{$name}.ttf) format("truetype");
+//     font-weight: $weight;
+//   }
+// }

@@ -14,112 +14,93 @@
     align-items: center;
     position: relative;
     padding-inline: rem(40);
-    overflow: hidden;
-  }
-
-  &__btn {
-    position: absolute;
-    width: rem(25);
-    height: rem(25);
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    z-index: 100;
-
-    &.left {
-      left: 0%;
-      top: 36%;
-    }
-
-    &.right {
-      right: 0%;
-      top: 36%;
-    }
-
-    &-img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   &__title {
     font-weight: 700;
-    font-size: clamp(rem(30), 1.33rem + 2.73vw, rem(54));
+    font-size: $fsr-1;
     line-height: 118%;
     text-align: center;
-    color: $dark;
+    color: $clr-1;
     padding-bottom: rem(49);
   }
 
-  &__cards {
-    overflow: hidden;
+  &__slider {
+    display: flex;
+    gap: rem(24);
+    justify-content: space-between;
+    transition: 0.3s linear;
 
-    &-slider {
-      display: flex;
-      gap: rem(24);
-      justify-content: space-between;
-      transition: 0.3s linear;
+    .slick-slide {
+      padding-right: rem(15);
+    }
 
-      &-item {
-        width: min(100%, rem(384));
-        flex-shrink: 0;
+    &-item {
+      &-link {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+        padding: rem(24);
+        border-radius: rem(16);
+        background: $clr-3;
 
-        @include breakpoint(lg) {
-          width: min(100%, rem(200));
+        &-text {
+          font-weight: 400;
+          font-size: rem(16);
+          line-height: 150%;
+          color: $clr-1;
+          white-space: pre-line;
+
+          @include breakpoint(sm) {
+            text-align: center;
+          }
         }
 
-        &-link {
+        &-profile {
           display: flex;
-          flex-direction: column;
-          gap: rem(16);
-          padding: rem(24);
-          border-radius: rem(16);
-          background: $white;
+          gap: rem(12);
 
-          &-text {
-            font-weight: 400;
-            font-size: rem(16);
-            line-height: 150%;
-            color: $dark;
-            white-space: pre-line;
+          @include breakpoint(sm) {
+            flex-direction: column;
+            align-items: center;
           }
 
-          &-profile {
+          &-pic {
             display: flex;
-            gap: rem(12);
 
-            &-pic {
-              display: flex;
+            &-img {
+              width: rem(48);
+              height: rem(48);
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
 
-              &-img {
-                width: rem(48);
-                height: rem(48);
-                border-radius: 50%;
-                object-fit: cover;
-              }
+          &-desc {
+            display: flex;
+            flex-direction: column;
+            gap: rem(8);
+
+            @include breakpoint(sm) {
+              align-items: center;
+              text-align: center;
             }
 
-            &-desc {
-              display: flex;
-              flex-direction: column;
-              gap: rem(8);
+            &-title {
+              font-weight: 700;
+              font-size: rem(16);
+              line-height: 150%;
+              color: $clr-1;
+            }
 
-              &-title {
+            &-text {
+              font-weight: 400;
+              font-size: rem(16);
+              line-height: 150%;
+              color: $clr-1;
+
+              & span {
                 font-weight: 700;
-                font-size: rem(16);
-                line-height: 150%;
-                color: $dark;
-              }
-
-              &-text {
-                font-weight: 400;
-                font-size: rem(16);
-                line-height: 150%;
-                color: $dark;
-
-                & span {
-                  font-weight: 700;
-                }
               }
             }
           }

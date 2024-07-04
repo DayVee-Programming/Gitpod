@@ -22,10 +22,10 @@
 
   &__title {
     font-weight: 700;
-    font-size: clamp(rem(30), 1.446rem + 2.14vw, rem(54));
+    font-size: $fsr-1;
     line-height: 133%;
     text-align: center;
-    color: $dark;
+    color: $clr-1;
   }
 
   &__pic {
@@ -45,7 +45,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: $orange;
+      fill: $clr-5;
     }
   }
 
@@ -56,7 +56,6 @@
     font-size: rem(24);
     line-height: 133%;
     text-align: center;
-    color: $dark-70;
   }
 
   &__list {
@@ -65,21 +64,26 @@
     justify-content: center;
 
     &-item {
-      border: rem(1) solid $black;
+      border: rem(1) solid $clr-6;
 
       &-link {
         display: flex;
         gap: rem(10);
         align-items: center;
         padding: rem(12);
-        background: $white;
+        background: $clr-3;
         box-shadow: 0 rem(0) rem(2) 0 rgba(0, 0, 0, 0.1);
         border-radius: rem(9);
         transform: scale(1.01, 1.05);
 
+        @include breakpoint(lg) {
+          padding: rem(5);
+          gap: rem(5);
+        }
+
         &-img {
-          width: rem(24);
-          height: rem(24);
+          max-width: rem(24);
+          max-height: rem(24);
           border-radius: rem(9);
         }
 
@@ -88,7 +92,7 @@
           font-size: rem(18);
           line-height: 177%;
           text-align: center;
-          color: $dark;
+          color: $clr-1;
         }
       }
     }

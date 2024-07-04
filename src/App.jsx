@@ -404,3 +404,5 @@ function App() {
 }
 
 export default App;
+
+// add slider, rename some components, use more advanced properties
