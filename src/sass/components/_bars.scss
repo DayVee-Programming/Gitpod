@@ -26,8 +26,8 @@
       padding: rem(10);
 
       &-link {
-        color: $dark;
-        font-size: clamp(rem(25), 0.909rem + 1.7vw, rem(35));
+        color: $clr-1;
+        font-size: $fsr-3;
       }
     }
   }

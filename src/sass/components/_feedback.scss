@@ -14,16 +14,99 @@
     align-items: center;
     position: relative;
     padding-inline: rem(40);
-    overflow: hidden;
   }
 
   &__title {
     font-weight: 700;
-    font-size: clamp(rem(30), 1.33rem + 2.73vw, rem(54));
+    font-size: $fsr-1;
     line-height: 118%;
     text-align: center;
-    color: $dark;
+    color: $clr-1;
     padding-bottom: rem(49);
+  }
+
+  &__slider {
+    display: flex;
+    gap: rem(24);
+    justify-content: space-between;
+    transition: 0.3s linear;
+
+    .slick-slide {
+      padding-right: rem(15);
+    }
+
+    &-item {
+      &-link {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+        padding: rem(24);
+        border-radius: rem(16);
+        background: $clr-3;
+
+        &-text {
+          font-weight: 400;
+          font-size: rem(16);
+          line-height: 150%;
+          color: $clr-1;
+          white-space: pre-line;
+
+          @include breakpoint(sm) {
+            text-align: center;
+          }
+        }
+
+        &-profile {
+          display: flex;
+          gap: rem(12);
+
+          @include breakpoint(sm) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          &-pic {
+            display: flex;
+
+            &-img {
+              width: rem(48);
+              height: rem(48);
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          &-desc {
+            display: flex;
+            flex-direction: column;
+            gap: rem(8);
+
+            @include breakpoint(sm) {
+              align-items: center;
+              text-align: center;
+            }
+
+            &-title {
+              font-weight: 700;
+              font-size: rem(16);
+              line-height: 150%;
+              color: $clr-1;
+            }
+
+            &-text {
+              font-weight: 400;
+              font-size: rem(16);
+              line-height: 150%;
+              color: $clr-1;
+
+              & span {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   &__companies {
@@ -31,7 +114,7 @@
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
     justify-items: center;
-    padding-top: rem(100);
+    padding-top: rem(130);
     gap: rem(40) rem(50);
 
     @include breakpoint(lg) {
@@ -40,7 +123,6 @@
 
     @include breakpoint(md) {
       grid-template-columns: repeat(3, 1fr);
-      padding-top: rem(50);
     }
 
     @include breakpoint(sm) {

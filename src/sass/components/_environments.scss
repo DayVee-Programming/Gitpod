@@ -28,7 +28,7 @@
       font-weight: 700;
       font-size: rem(32);
       line-height: 125%;
-      color: $dark;
+      color: $clr-1;
       padding-bottom: rem(8);
     }
 
@@ -36,7 +36,6 @@
       font-weight: 400;
       font-size: rem(24);
       line-height: 133%;
-      color: $dark-70;
       padding-bottom: rem(155);
 
       @include breakpoint(lg) {
@@ -54,17 +53,17 @@
         font-size: rem(14);
         line-height: 114%;
         text-align: center;
-        color: $dark;
+        color: $clr-1;
         padding: rem(8) rem(18);
         box-shadow: 0 rem(1) rem(1) 0 rgba(0, 0, 0, 0.1);
         border-radius: rem(10);
 
         &.orange {
-          background: $orange;
+          background: $clr-5;
         }
 
         &.pink {
-          background: $pink;
+          background: $clr-9;
         }
       }
     }

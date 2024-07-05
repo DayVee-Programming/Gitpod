@@ -22,9 +22,9 @@
 
     &-title {
       font-weight: 700;
-      font-size: clamp(rem(35), 1.384rem + 4.02vw, rem(80));
+      font-size: $fsr-2;
       line-height: 110%;
-      color: $dark;
+      color: $clr-1;
       padding-bottom: rem(39);
     }
 
@@ -32,7 +32,6 @@
       font-weight: 400;
       font-size: rem(23);
       line-height: 139%;
-      color: $dark-70;
       padding-bottom: rem(48);
     }
 
@@ -53,11 +52,11 @@
           font-size: rem(18);
           line-height: 125%;
           text-align: center;
-          color: $dark;
+          color: $clr-1;
           padding: rem(12) rem(46);
           border-radius: rem(16);
           box-shadow: 0 rem(1) rem(1) 0 rgba(0, 0, 0, 0.1);
-          background: $orange;
+          background: $clr-5;
         }
 
         &-list {
@@ -77,7 +76,6 @@
         font-weight: 400;
         font-size: rem(16);
         line-height: 150%;
-        color: $dark-70;
       }
     }
   }

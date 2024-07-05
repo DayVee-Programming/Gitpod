@@ -2,7 +2,7 @@
 @use "../base" as *;
 
 .footer {
-  background: $light;
+  background: $clr-4;
 
   &__wrap {
     padding-inline: rem(294);
@@ -22,7 +22,7 @@
 
   &__content {
     padding: rem(48) 0;
-    border-bottom: rem(1) solid $pink-lighter;
+    border-bottom: rem(1) solid $clr-11;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
@@ -43,7 +43,6 @@
           font-weight: 400;
           font-size: rem(13);
           line-height: 150%;
-          color: $dark-70;
         }
       }
     }
@@ -62,7 +61,7 @@
       align-items: center;
 
       &-img {
-        width: rem(22);
+        max-width: rem(22);
       }
     }
 
@@ -70,7 +69,6 @@
       font-weight: 400;
       font-size: rem(13);
       line-height: 150%;
-      color: $dark-70;
     }
 
     &-socials {

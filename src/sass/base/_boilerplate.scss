@@ -1,35 +1,50 @@
 @use "../abstract" as *;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+$clr-1: #12100c;
+$clr-2: #12100cb3;
+$clr-3: #fff;
+$clr-4: #f9f9f9;
+$clr-5: #ffae33;
+$clr-6: #000;
+$clr-7: #f5f3f4;
+$clr-8: #999795;
+$clr-9: #ffb0ae;
+$clr-10: #ffe4bc;
+$clr-11: #ece7e5;
+$clr-12: #2684ff;
+$clr-13: #fc6d26;
+$ff-1: "Roboto", sans-serif;
+$fs-1: rem(16);
+$fs-2: rem(14);
+$fs-3: rem(18);
+$fs-4: rem(23);
+$fs-5: rem(32);
+$fs-6: rem(24);
+$fs-7: rem(13);
+$fs-8: rem(20);
+$fsr-1: clamp(rem(30), 1.33rem + 2.73vw, rem(54));
+$fsr-2: clamp(rem(35), 1.384rem + 4.02vw, rem(80));
+$fsr-3: clamp(rem(25), 0.909rem + 1.7vw, rem(35));
+$fsr-4: clamp(rem(24), 1.318rem + 0.91vw, rem(32));
+$fsr-5: clamp(rem(20), 1.159rem + 0.45vw, rem(24));
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: $ff-1;
+  color: $clr-2;
 }
-
-$black: #000;
-$dark-70: #12100cb3;
-$dark: #12100c;
-$gray: #999795;
-$white: #fff;
-$light: #f9f9f9;
-$bg: #f5f3f4;
-$orange: #ffae33;
-$red: #fc6d26;
-$pink: #ffb0ae;
-$pink-light: #ffe4bc;
-$pink-lighter: #ece7e5;
-$blue: #2684ff;
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: $bg;
+  background: $clr-7;
 }
 
 img {
