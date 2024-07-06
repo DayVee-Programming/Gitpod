@@ -1,7 +1,7 @@
 const FeedbackCompany = ({ company }) => {
   return (
     <li className="feedback__companies-item">
-      <a href={company.link} className="feedback__companies-item-link">
+      <a className="feedback__companies-item-link">
         <img
           src={company.img}
           alt=""

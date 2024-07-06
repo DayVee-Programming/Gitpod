@@ -22,7 +22,7 @@ const Remote = () => {
         </p>
         <ul className="remote__list">
           <li className="remote__list-item">
-            <a href="#" className="remote__list-item-link">
+            <a className="remote__list-item-link">
               <img
                 src={images.chromeIcon}
                 alt=""
@@ -34,7 +34,7 @@ const Remote = () => {
             </a>
           </li>
           <li className="remote__list-item">
-            <a href="#" className="remote__list-item-link">
+            <a className="remote__list-item-link">
               <img
                 src={images.firefoxIcon}
                 alt=""

@@ -15,16 +15,20 @@ const Environments = () => {
             continuously.
           </p>
           <div className="environments__content-links">
-            <a href="#" className="environments__content-links-link orange">
+            <a className="environments__content-links-link orange">
               More on prebuilds
             </a>
-            <a href="#" className="environments__content-links-link pink">
+            <a className="environments__content-links-link pink">
               Documentation
             </a>
           </div>
         </div>
         <div className="environments__pic">
-          <img src={images.environments} alt="" className="environments__pic-img" />
+          <img
+            src={images.environments}
+            alt=""
+            className="environments__pic-img"
+          />
         </div>
       </div>
     </div>

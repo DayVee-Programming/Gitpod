@@ -1,7 +1,7 @@
 const FeedbackSlide = ({ card }) => {
   return (
     <li className="feedback__slider-item">
-      <a href="#" className="feedback__slider-item-link">
+      <a className="feedback__slider-item-link">
         <p className="feedback__slider-item-link-text">{card.comment}</p>
         <div className="feedback__slider-item-link-profile">
           <div className="feedback__slider-item-link-profile-pic">

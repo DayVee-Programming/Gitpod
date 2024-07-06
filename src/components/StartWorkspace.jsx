@@ -1,7 +1,7 @@
 const StartWorkspace = ({ workspace }) => {
   return (
     <li className="start__workspaces-cards-item">
-      <a href={workspace.to} className="start__workspaces-cards-item-link">
+      <a className="start__workspaces-cards-item-link">
         <div className="start__workspaces-cards-item-link-desc">
           <img
             src={workspace.img}

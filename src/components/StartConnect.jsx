@@ -1,7 +1,7 @@
 const StartConnect = ({ connect }) => {
   return (
     <li className="start__content-connect-list-item">
-      <a href={connect.to} className="start__content-connect-list-item-link">
+      <a className="start__content-connect-list-item-link">
         <img
           src={connect.img}
           alt=""

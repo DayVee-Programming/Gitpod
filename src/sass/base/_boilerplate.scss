@@ -52,6 +52,10 @@ img {
   height: 100%;
 }
 
+a {
+  cursor: pointer;
+}
+
 // original container for a full webpage
 .full-container {
   width: min(100%, rem(1440));

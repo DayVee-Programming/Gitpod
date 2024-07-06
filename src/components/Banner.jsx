@@ -13,9 +13,7 @@ const Banner = ({ banner }) => {
           </p>
           <div className="banner__content-bottom">
             <div className="banner__content-bottom-try">
-              <a href="#" className="banner__content-bottom-try-link">
-                Try Now
-              </a>
+              <a className="banner__content-bottom-try-link">Try Now</a>
               <ul className="banner__content-bottom-try-list">
                 {banner.images.map((image) => (
                   <BannerImage image={image} key={image.id} />
