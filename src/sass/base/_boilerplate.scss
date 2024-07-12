@@ -56,9 +56,13 @@ a {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 // original container for a full webpage
 .full-container {
-  width: min(100%, rem(1440));
+  width: min(100%, rem(1470));
   height: 100%;
   margin-inline: auto;
   padding-inline: rem(15);

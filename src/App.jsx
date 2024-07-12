@@ -387,14 +387,12 @@ function App() {
       value={{ areBarsOpen, setAreBarsOpen, isPlaying, setIsPlaying }}
     >
       <Navbar navbar={navbar} />
-      <main>
-        <Banner banner={banner} />
-        <Motto />
-        <Environments />
-        <Remote />
-        <Feedback feedback={feedback} />
-        <Start start={start} />
-      </main>
+      <Banner banner={banner} />
+      <Motto />
+      <Environments />
+      <Remote />
+      <Feedback feedback={feedback} />
+      <Start start={start} />
       <Footer footer={footer} />
 
       {areBarsOpen && <Bars navbar={navbar} />}

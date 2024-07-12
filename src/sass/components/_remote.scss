@@ -50,8 +50,7 @@
   }
 
   &__text {
-    max-width: rem(877);
-    width: 100%;
+    width: min(100%, rem(877));
     font-weight: 400;
     font-size: rem(24);
     line-height: 133%;

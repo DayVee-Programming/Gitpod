@@ -10,7 +10,7 @@ const Navbar = ({ navbar }) => {
     <header id="header" className="header">
       <nav className="navbar">
         <div className="full-container navbar__wrap">
-          <a className="navbar__logo" onClick={() => scrollTo(0, 0)}>
+          <a href="#" className="navbar__logo">
             <img className="navbar__logo-img" src={images.logo} alt="" />
           </a>
           <ul className="navbar__list">
