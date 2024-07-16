@@ -14,7 +14,7 @@ const Bars = ({ navbar }) => {
             <BarsLink link={link} key={link.id} />
           ))}
           <li className="bars__list-item">
-            <a>
+            <a className="bars__list-item-link">
               Login
             </a>
           </li>

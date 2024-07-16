@@ -35,7 +35,23 @@
       padding-right: rem(15);
     }
 
+    .slick-arrow:hover::before {
+      color: $clr-1;
+    }
+
+    .slick-arrow::before {
+      font-size: rem(30);
+      transition: 0.3s;
+      color: $clr-8;
+    }
+
     &-item {
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(rem(10));
+      }
+
       &-link {
         display: flex;
         flex-direction: column;
@@ -134,6 +150,11 @@
 
       &-link {
         display: flex;
+        transition: 0.3s;
+
+        &:hover {
+          transform: translateY(rem(-10));
+        }
 
         &-img {
           max-width: rem(86);

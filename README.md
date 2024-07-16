@@ -4,11 +4,11 @@ With Gitpod spin up fresh, automated dev environments for each task, in the clou
 
 ## Screenshots from the project
 
-<img src="./src/assets/images/screenshot1.jpg" />
+<img src="./src/assets/images/screenshot1.png" />
 <hr>
-<img src="./src/assets/images/screenshot2.jpg" />
+<img src="./src/assets/images/screenshot2.png" />
 <hr>
-<img src="./src/assets/images/screenshot3.jpg" />
+<img src="./src/assets/images/screenshot3.png" />
 
 ## How to run the project 
 

@@ -82,6 +82,30 @@
             gap: rem(16);
             align-items: center;
             padding: rem(9) rem(33);
+            z-index: 1;
+            overflow: hidden;
+            position: relative;
+
+            &:hover &-span {
+              color: $clr-1;
+            }
+
+            &:hover::before {
+              width: 100%;
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 0;
+              height: 100%;
+              background: $clr-7;
+              transition: 0.5s;
+              z-index: -1;
+              border-radius: rem(12);
+            }
 
             &-img {
               max-width: rem(28);
@@ -170,6 +194,11 @@
           padding: rem(12);
           border-radius: rem(12);
           background: $clr-4;
+          transition: 0.3s;
+
+          &:hover {
+            background: $clr-11;
+          }
 
           &-desc {
             display: flex;

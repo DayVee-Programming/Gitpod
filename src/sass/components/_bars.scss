@@ -7,11 +7,11 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  background: rgb(245, 243, 244, 0.9);
+  background: rgb(245, 243, 244, 0.97);
 
   &__wrap {
     width: min(100%, rem(450));
-    margin: 30% 0 rem(15);
+    margin: rem(30) 0 rem(15);
   }
 
   &__list {
@@ -21,6 +21,12 @@
 
     &-item {
       padding: rem(10);
+
+      @include breakpoint(sm) {
+        &:first-child {
+          grid-column: 2 span;
+        }
+      }
 
       &-link {
         color: $clr-1;

@@ -43,6 +43,22 @@
           font-weight: 400;
           font-size: rem(13);
           line-height: 150%;
+          position: relative;
+
+          &:hover::after {
+            width: 100%;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: rem(-2);
+            left: 0;
+            width: 0%;
+            height: rem(2);
+            background: $clr-1;
+            transition: 0.3s;
+          }
         }
       }
     }
@@ -77,6 +93,12 @@
       align-items: center;
 
       &-item {
+        transition: 0.3s;
+
+        &:hover {
+          transform: translateY(rem(10));
+        }
+
         &-pic {
           display: flex;
         }

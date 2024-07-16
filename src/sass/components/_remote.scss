@@ -65,6 +65,10 @@
     &-item {
       border: rem(1) solid $clr-6;
 
+      &:hover &-link-span {
+        letter-spacing: rem(1);
+      }
+
       &-link {
         display: flex;
         gap: rem(10);
@@ -92,6 +96,7 @@
           line-height: 177%;
           text-align: center;
           color: $clr-1;
+          transition: 0.3s;
         }
       }
     }

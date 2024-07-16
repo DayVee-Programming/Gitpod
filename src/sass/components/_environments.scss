@@ -60,10 +60,60 @@
 
         &.orange {
           background: $clr-5;
+          transition: 0.5s;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+
+          &:hover {
+            color: $clr-5;
+          }
+
+          &:hover::after {
+            height: 180%;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: $clr-1;
+            z-index: -1;
+            transition: 0.5s;
+            border-radius: 0 0 50% 50%;
+          }
         }
 
         &.pink {
           background: $clr-9;
+          transition: 0.5s;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+
+          &:hover {
+            color: $clr-9;
+          }
+
+          &:hover::after {
+            height: 180%;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: $clr-1;
+            z-index: -1;
+            transition: 0.5s;
+            border-radius: 0 0 50% 50%;
+          }
         }
       }
     }
